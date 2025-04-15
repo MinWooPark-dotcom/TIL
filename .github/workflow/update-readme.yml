@@ -1,0 +1,32 @@
+name: 🔄 Auto-generate README
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - README.md  # 무한 루프 방지
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.12
+
+    - name: Run README generator
+      run: |
+        python update_readme.py
+
+    - name: Commit changes
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add README.md
+        git diff --cached --quiet || git commit -m "🤖 auto: update README.md"
+        git push
