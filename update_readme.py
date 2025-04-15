@@ -8,8 +8,6 @@ def format_dir_name(name):
 
 def generate_readme(root='.'):
     lines = ['# 📘 Today I Learned\n']
-    lines.append('> 꾸준히 학습하며 기록한 내용을 정리합니다.\n')
-    lines.append('---\n')
 
     for topic in sorted(os.listdir(root)):
         topic_path = os.path.join(root, topic)
