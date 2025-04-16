@@ -1,6 +1,6 @@
 import os
 
-EXCLUDE_DIRS = {'archive', '.git', '.github', '__pycache__'}
+EXCLUDE_DIRS = {'archive', '.git', '.github', '__pycache__', 'images'}
 
 def format_dir_name(name):
     # PascalCase → 공백 + 대문자 처리 (e.g. ModelEvaluation → Model Evaluation)
