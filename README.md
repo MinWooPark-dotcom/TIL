@@ -2,9 +2,17 @@
 
 ## 📂 Computer Architecture
 
-- [Computer operation](ComputerArchitecture/computer_operation.md)
+- [Computer Operation](ComputerArchitecture/computer_operation.md)
+
+## 📂 Kubernetes
+
+- [Deployment Resources](Kubernetes/deployment_resources.md)
 
 ## 📂 Model Evaluation
 
-- [Model evaluation metrics](ModelEvaluation/model_evaluation_metrics.md)
-- [Model performance improvement](ModelEvaluation/model_performance_improvement.md)
+- [Model Evaluation Metrics](ModelEvaluation/model_evaluation_metrics.md)
+- [Model Performance Improvement](ModelEvaluation/model_performance_improvement.md)
+
+## 📂 Network
+
+- [DNS](Network/dns.md)
