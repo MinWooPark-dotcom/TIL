@@ -15,10 +15,14 @@ EXCLUDE_DIRS = {
 
 # 특정 단어에 대해 커스텀 케이싱 설정
 SPECIAL_CASING = {
-    'dns': 'DNS'
+    'dns': 'DNS',
+    'AWS': 'AWS'
 }
 
 def format_dir_name(name):
+    if name in SPECIAL_CASING:
+        return name
+    
     # PascalCase → 공백 + 대문자 처리 (e.g. ModelEvaluation → Model Evaluation)
     return ''.join([' ' + c if c.isupper() else c for c in name]).strip().title()
 
