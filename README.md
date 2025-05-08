@@ -2,6 +2,8 @@
 
 ## 📂 AWS
 
+- [IAM](AWS/iam.md)
+- [RDS](AWS/rds.md)
 - [S3](AWS/s3.md)
 
 ## 📂 Computer Architecture
