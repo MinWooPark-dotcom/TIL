@@ -16,7 +16,9 @@ EXCLUDE_DIRS = {
 # 특정 단어에 대해 커스텀 케이싱 설정
 SPECIAL_CASING = {
     'dns': 'DNS',
-    'AWS': 'AWS'
+    'AWS': 'AWS',
+    'rds': 'RDS',
+    'iam': 'IAM'
 }
 
 def format_dir_name(name):
