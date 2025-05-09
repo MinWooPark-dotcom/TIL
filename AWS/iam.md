@@ -1,4 +1,4 @@
-# IAM(Identity and Access Management)
+# IAM(Identity and Access Management) 활용과 설계
 
 ## 개념 요약
 - IAM은 AWS 리소스에 대한 접근 제어 및 권한 위임을 관리하는 핵심 서비스
