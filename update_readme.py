@@ -18,7 +18,8 @@ SPECIAL_CASING = {
     'dns': 'DNS',
     'AWS': 'AWS',
     'rds': 'RDS',
-    'iam': 'IAM'
+    'iam': 'IAM',
+    'cloudfront': 'CloudFront'
 }
 
 def format_dir_name(name):
