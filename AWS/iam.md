@@ -20,7 +20,7 @@
 - Permissions Boundary
     - DevOps 계정 내 IAM 역할 생성 시, 최대 권한의 상한선을 설정해 오버 프로비저닝 방지
 - Cross-account Role + Trust Policy
-    - 운영 계정에서 역할을 생성하고, DevOps 계정에서 AssumeRole 가능하도록 신뢰 정책(Trust Policy) 구성\
+    - 운영 계정에서 역할을 생성하고, DevOps 계정에서 AssumeRole 가능하도록 신뢰 정책(Trust Policy) 구성
 - Least Privilege Policy
     - 접근 대상 리소스(EKS, RDS, S3)에 필요한 최소 권한만 부여하여 보안 최소화 원칙 적용
 - CloudTrail + IAM Access Analyzer
