@@ -2,10 +2,21 @@
 
 ## 📂 AWS
 
-- [CloudFront](AWS/cloudfront.md)
-- [IAM](AWS/iam.md)
-- [RDS](AWS/rds.md)
-- [S3](AWS/s3.md)
+### Compute
+- [Ec2](AWS/Compute/ec2.md)
+
+### Database
+- [RDS](AWS/Database/rds.md)
+
+### Messaging And Streaming
+- [Kinesis](AWS/MessagingAndStreaming/kinesis.md)
+
+### Networking
+- [CloudFront](AWS/Networking/cloudfront.md)
+- [IAM](AWS/Networking/iam.md)
+
+### Storage
+- [S3](AWS/Storage/s3.md)
 
 ## 📂 Computer Architecture
 
@@ -15,6 +26,11 @@
 
 - [Deployment Resources](Kubernetes/deployment_resources.md)
 
+## 📂 Machine Learning
+
+- [Supervised Learning](MachineLearning/supervised_learning.md)
+- [Unsupervised Learning](MachineLearning/unsupervised_learning.md)
+
 ## 📂 Model Evaluation
 
 - [Model Evaluation Metrics](ModelEvaluation/model_evaluation_metrics.md)
@@ -23,3 +39,4 @@
 ## 📂 Network
 
 - [DNS](Network/dns.md)
+- [Tls](Network/tls.md)
