@@ -39,4 +39,4 @@
 ## 📂 Network
 
 - [DNS](Network/dns.md)
-- [Tls](Network/tls.md)
+- [TLS](Network/tls.md)
