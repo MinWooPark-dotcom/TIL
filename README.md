@@ -3,7 +3,7 @@
 ## 📂 AWS
 
 ### Compute
-- [Ec2](AWS/Compute/ec2.md)
+- [EC2](AWS/Compute/ec2.md)
 
 ### Database
 - [RDS](AWS/Database/rds.md)
