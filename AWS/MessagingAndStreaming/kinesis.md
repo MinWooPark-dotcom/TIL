@@ -36,5 +36,17 @@ Kinesis (실시간 스트리밍 플랫폼)
 - Firehose가 KDS를 source로 쓰면, **직접 PutRecord는 비활성화됨**
 - Kinesis Agent는 Firehose로 직접 쓰지 못하고, **KDS로 보내야 정상 작동**
 
+## Kinesis 3종, SQS 비교표
+| 항목           | **Kinesis Data Streams** | **Kinesis Data Firehose** | **Kinesis Data Analytics** | **Amazon SQS**             |
+| ------------ | ------------------------ | ------------------------- | -------------------------- | -------------------------- |
+| 주요 용도     | 실시간 데이터 수집 및 다중 소비자 처리   | 스트림 → 저장소 자동 전송           | SQL 기반 실시간 분석              | 큐 기반 메시지 처리                |
+| 입력 형태     | Producer → Shard         | Producer → Firehose       | KDS / Firehose             | Application / Lambda 등     |
+| 소비자 처리 방식 | **Pull 방식** (직접 읽기)      | **Push 방식** (자동 저장)       | 내부 SQL 처리                  | **Consumer가 Pull**         |
+| 지연 시간     | 수 밀리초 \~ 수 초             | 수 초 단위 (버퍼링)              | 실시간 분석 수준                  | 수 초 \~ 수 분                 |
+| 재처리 가능 여부  | V 가능 (레코드 리텐션 내)        | X 불가능                     | X 불가능                      | V 가능 (Visible Timeout 설정) |
+| 다중 소비자 지원 | V 병렬 읽기 가능              | X 단일 처리 후 저장              | X 분석 전용                    | X 하나씩 메시지 소비               |
+| 과금 기준     | Shard 수, 데이터 입력량         | 데이터 전송량                   | 분석 처리 시간                   | 요청 수, 메시지 보관 시간            |
+
+
 ## Reference
 - [서버리스 스트리밍 데이터 서비스 - Amazon Kinesis](https://aws.amazon.com/ko/pm/kinesis/?trk=5860e0a8-c230-4101-ba35-cdf15ec7e186&sc_channel=ps&ef_id=Cj0KCQjww-HABhCGARIsALLO6Xxl-1aKOtzLmqe0To9IGM5dCiYs9J0ikkurv3_k33BMredLAa_keDkaAgqyEALw_wcB:G:s&s_kwcid=AL!4422!3!651510601836!p!!g!!kinesis%20stream!19828229715!148480174473&gad_campaignid=19828229715&gbraid=0AAAAADjHtp-nVczWWxUAzkjn5KApejfsF&gclid=Cj0KCQjww-HABhCGARIsALLO6Xxl-1aKOtzLmqe0To9IGM5dCiYs9J0ikkurv3_k33BMredLAa_keDkaAgqyEALw_wcB)
