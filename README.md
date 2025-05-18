@@ -13,6 +13,7 @@
 
 ### Networking
 - [CloudFront](AWS/Networking/cloudfront.md)
+- [Direct Connect](AWS/Networking/direct_connect.md)
 - [IAM](AWS/Networking/iam.md)
 
 ### Storage
@@ -25,6 +26,9 @@
 ## 📂 Kubernetes
 
 - [Deployment Resources](Kubernetes/deployment_resources.md)
+
+## 📂 Linux
+
 
 ## 📂 Machine Learning
 
