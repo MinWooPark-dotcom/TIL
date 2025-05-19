@@ -2,6 +2,9 @@
 
 ## 📂 AWS
 
+### Architecture
+- [Traffic Throttling And Buffering](AWS/Architecture/traffic_throttling_and_buffering.md)
+
 ### Compute
 - [EC2](AWS/Compute/ec2.md)
 
