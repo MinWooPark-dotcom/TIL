@@ -6,6 +6,7 @@
 - [Traffic Throttling And Buffering](AWS/Architecture/traffic_throttling_and_buffering.md)
 
 ### Compute
+- [AMI](AWS/Compute/ami.md)
 - [EC2](AWS/Compute/ec2.md)
 
 ### Database

@@ -19,7 +19,10 @@ SPECIAL_CASING = {
     'aws': 'AWS',
     'rds': 'RDS',
     'iam': 'IAM',
-    'cloudfront': 'CloudFront'
+    'cloudfront': 'CloudFront',
+    'tls': 'TLS',
+    'ec2': 'EC2',
+    'ami': 'AMI'
 }
 
 def format_dir_name(name):
@@ -37,6 +40,7 @@ def format_title(filename):
 
     for word in words:
         lower = word.lower()
+        print(lower)
         if lower in SPECIAL_CASING:
             formatted.append(SPECIAL_CASING[lower])
         else:
